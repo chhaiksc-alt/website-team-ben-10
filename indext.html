@@ -69,7 +69,7 @@
 
                 <!-- Desktop Navigation -->
                 <div class="hidden md:flex items-center space-x-10">
-                    <a href="../html/indext.html" class="relative group">
+                    <a href="./indext.html" class="relative group">
                         <span class="text-blue-100 group-hover:text-white transition-colors duration-300">Home</span>
                         <div
                             class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-cyan-400 group-hover:w-full transition-all duration-300">
@@ -79,8 +79,7 @@
                         </div>
                     </a>
                     <a href="./video.html" class="relative group">
-                        <span
-                            class="text-blue-100 group-hover:text-white transition-colors duration-300">video</span>
+                        <span class="text-blue-100 group-hover:text-white transition-colors duration-300">video</span>
                         <div
                             class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-cyan-400 group-hover:w-full transition-all duration-300">
                         </div>
@@ -88,7 +87,7 @@
                             class="absolute -bottom-1 left-0 w-0 h-0.5 bg-white/20 group-hover:w-full transition-all duration-500 delay-100">
                         </div>
                     </a>
-                    <a href="#" class="relative group">
+                    <a href="./about.html" class="relative group">
                         <span class="text-blue-100 group-hover:text-white transition-colors duration-300">About</span>
                         <div
                             class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-cyan-400 group-hover:w-full transition-all duration-300">
@@ -121,6 +120,7 @@
                 <button @click="isOpen = !isOpen" class="md:hidden relative group" aria-label="Toggle mobile menu">
                     <div
                         class="absolute -inset-0.5 bg-gradient-to-r from-blue-500 to-cyan-400 rounded blur opacity-60 group-hover:opacity-100 transition duration-200">
+                        <a href="./about.html"></a>
                     </div>
                     <div class="relative p-2 bg-blue-950 rounded leading-none">
                         <svg x-show="!isOpen" class="w-6 h-6 text-blue-200 group-hover:text-white" fill="none"
@@ -135,6 +135,7 @@
                         </svg>
                     </div>
                 </button>
+
             </div>
         </div>
 
@@ -144,17 +145,18 @@
             x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100 translate-y-0"
             x-transition:leave-end="opacity-0 -translate-y-2" class="relative mt-4 md:hidden">
             <div class="px-2 pt-2 pb-3 space-y-1 bg-blue-900/50 backdrop-blur-sm rounded-lg border border-blue-500/10">
-                <a href="#"
+                <a href="./indext.html"
                     class="block px-3 py-2 rounded-md text-base font-medium text-blue-100 hover:text-white hover:bg-blue-800/50 transition-all duration-200">Home</a>
-                <a href="#"
+                <a href="./video.html"
                     class="block px-3 py-2 rounded-md text-base font-medium text-blue-100 hover:text-white hover:bg-blue-800/50 transition-all duration-200">Features</a>
-                <a href="#"
+                <a href="./about.html"
                     class="block px-3 py-2 rounded-md text-base font-medium text-blue-100 hover:text-white hover:bg-blue-800/50 transition-all duration-200">About</a>
                 <a href="#"
                     class="block px-3 py-2 rounded-md text-base font-medium text-blue-100 hover:text-white hover:bg-blue-800/50 transition-all duration-200">Contact</a>
                 <!-- Mobile CTA Button -->
             </div>
         </div>
+
         </div>
     </nav>
 
@@ -531,7 +533,45 @@
     <!-- team plan -->
     <div>
         <h2 class="text-3xl font-bold mb-4 text-green-400 text-center">Team Plan</h2>
-        <img class="w-full" src="../photo/lineup.png" alt="">
+        <img class="max-w-96 h-96" src="../photo/lineup.png" alt="">
+        <p class="text-gray-950 text-left justify-items-end">Player Roles
+
+            Goalkeeper (GK)
+
+            The goalkeeper protects the goal and stops the opposing team from scoring.
+
+            Center Back (CB)
+
+            Strong defenders who block attacks and clear the ball from danger areas.
+
+            Full Back (LB/RB)
+
+            Defenders who protect the sides of the field and support attacking plays.
+
+            Defensive Midfielder (CDM)
+
+            Helps the defense by winning the ball and stopping opponent attacks.
+
+            Central Midfielder (CM)
+
+            Controls the game by passing, creating chances, and supporting both defense and attack.
+
+            Attacking Midfielder (CAM)
+
+            Creates scoring opportunities and supports the forwards in attack.
+
+            Winger (LW/RW)
+
+            Fast players who attack from the sides and deliver crosses or score goals.
+
+            Striker (ST)
+
+            Main goal scorer of the team, focused on finishing attacking chances.
+
+            Captain
+
+            Leads and motivates the team during matches and training sessions.
+        </p>
     </div>
     <!-- gallary team -->
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
@@ -610,127 +650,106 @@
 
         <!-- Repeat this div for each image -->
     </div>
-    <!-- contact -->
-    <section class="bg-blue-50 dark:bg-slate-800" id="contact">
-        <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
-            <div class="mb-4">
-                <div class="mb-6 max-w-3xl text-center sm:text-center md:mx-auto md:mb-12">
-                    <p class="text-base font-semibold uppercase tracking-wide text-blue-600 dark:text-blue-200">
-                        Contact
-                    </p>
-                    <h2
-                        class="font-heading mb-4 font-bold tracking-tight text-gray-900 dark:text-white text-3xl sm:text-5xl">
-                        Get in Touch
-                    </h2>
-                    <p class="mx-auto mt-4 max-w-3xl text-xl text-gray-600 dark:text-slate-400">In hac habitasse platea
-                        dictumst
-                    </p>
-                </div>
+
+    <!-- Contact Section -->
+    <section class="bg-gray-100 py-16 dark:bg-gray-900">
+        <div class="max-w-6xl mx-auto px-6">
+
+            <!-- Title -->
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800 dark:text-white">
+                    Contact Our Football Team
+                </h2>
+                <p class="text-gray-600 dark:text-gray-300 mt-4">
+                    Get in touch with Team Football Ben 10 for matches, sponsorships, or questions.
+                </p>
             </div>
-            <div class="flex items-stretch justify-center">
-                <div class="grid md:grid-cols-2">
-                    <div class="h-full pr-6">
-                        <p class="mt-3 mb-12 text-lg text-gray-600 dark:text-slate-400">
-                            Class aptent taciti sociosqu ad
-                            litora torquent per conubia nostra, per inceptos himenaeos. Duis nec ipsum orci. Ut
-                            scelerisque
-                            sagittis ante, ac tincidunt sem venenatis ut.
-                        </p>
-                        <ul class="mb-6 md:mb-0">
-                            <li class="flex">
-                                <div
-                                    class="flex h-10 w-10 items-center justify-center rounded bg-blue-900 text-gray-50">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" class="h-6 w-6">
-                                        <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"></path>
-                                        <path
-                                            d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z">
-                                        </path>
-                                    </svg>
-                                </div>
-                                <div class="ml-4 mb-4">
-                                    <h3 class="mb-2 text-lg font-medium leading-6 text-gray-900 dark:text-white">Our
-                                        Address
-                                    </h3>
-                                    <p class="text-gray-600 dark:text-slate-400">1230 Maecenas Street Donec Road</p>
-                                    <p class="text-gray-600 dark:text-slate-400">New York, EEUU</p>
-                                </div>
-                            </li>
-                            <li class="flex">
-                                <div
-                                    class="flex h-10 w-10 items-center justify-center rounded bg-blue-900 text-gray-50">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" class="h-6 w-6">
-                                        <path
-                                            d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2">
-                                        </path>
-                                        <path d="M15 7a2 2 0 0 1 2 2"></path>
-                                        <path d="M15 3a6 6 0 0 1 6 6"></path>
-                                    </svg>
-                                </div>
-                                <div class="ml-4 mb-4">
-                                    <h3 class="mb-2 text-lg font-medium leading-6 text-gray-900 dark:text-white">Contact
-                                    </h3>
-                                    <p class="text-gray-600 dark:text-slate-400">Mobile: +1 (123) 456-7890</p>
-                                    <p class="text-gray-600 dark:text-slate-400">Mail: tailnext@gmail.com</p>
-                                </div>
-                            </li>
-                            <li class="flex">
-                                <div
-                                    class="flex h-10 w-10 items-center justify-center rounded bg-blue-900 text-gray-50">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" class="h-6 w-6">
-                                        <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"></path>
-                                        <path d="M12 7v5l3 3"></path>
-                                    </svg>
-                                </div>
-                                <div class="ml-4 mb-4">
-                                    <h3 class="mb-2 text-lg font-medium leading-6 text-gray-900 dark:text-white">Working
-                                        hours</h3>
-                                    <p class="text-gray-600 dark:text-slate-400">Monday - Friday: 08:00 - 17:00</p>
-                                    <p class="text-gray-600 dark:text-slate-400">Saturday &amp; Sunday: 08:00 - 12:00
-                                    </p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="card h-fit max-w-6xl p-5 md:p-12" id="form">
-                        <h2 class="mb-4 text-2xl font-bold dark:text-white">Ready to Get Started?</h2>
-                        <form id="contactForm">
-                            <div class="mb-6">
-                                <div class="mx-0 mb-1 sm:mb-4">
-                                    <div class="mx-0 mb-1 sm:mb-4">
-                                        <label for="name" class="pb-1 text-xs uppercase tracking-wider"></label><input
-                                            type="text" id="name" autocomplete="given-name" placeholder="Your name"
-                                            class="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"
-                                            name="name">
-                                    </div>
-                                    <div class="mx-0 mb-1 sm:mb-4">
-                                        <label for="email" class="pb-1 text-xs uppercase tracking-wider"></label><input
-                                            type="email" id="email" autocomplete="email"
-                                            placeholder="Your email address"
-                                            class="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"
-                                            name="email">
-                                    </div>
-                                </div>
-                                <div class="mx-0 mb-1 sm:mb-4">
-                                    <label for="textarea"
-                                        class="pb-1 text-xs uppercase tracking-wider"></label><textarea id="textarea"
-                                        name="textarea" cols="30" rows="5" placeholder="Write your message..."
-                                        class="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"></textarea>
-                                </div>
+
+            <div class="grid md:grid-cols-2 gap-10">
+
+                <!-- Contact Info -->
+                <div class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg">
+                    <h3 class="text-2xl font-semibold text-gray-800 dark:text-white mb-6">
+                        Team Information
+                    </h3>
+
+                    <div class="space-y-5">
+
+                        <div class="flex items-center gap-4">
+                            <div>
+                                <h4 class="font-semibold text-gray-700 dark:text-white">
+                                    Team Name
+                                </h4>
+                                <p class="text-gray-600 dark:text-gray-300">
+                                    Team Football Ben 10
+                                </p>
                             </div>
-                            <div class="text-center">
-                                <button type="submit"
-                                    class="w-full bg-blue-800 text-white px-6 py-3 font-xl rounded-md sm:mb-0">Send
-                                    Message</button>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+
+                            <div>
+                                <h4 class="font-semibold text-gray-700 dark:text-white">
+                                    Location
+                                </h4>
+                                <p class="text-gray-600 dark:text-gray-300">
+                                    Phnom Penh, Cambodia
+                                </p>
                             </div>
-                        </form>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+
+                            <div>
+                                <h4 class="font-semibold text-gray-700 dark:text-white">
+                                    Phone
+                                </h4>
+                                <p class="text-gray-600 dark:text-gray-300">
+                                    +855 12 345 678
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+
+                            <div>
+                                <h4 class="font-semibold text-gray-700 dark:text-white">
+                                    Email
+                                </h4>
+                                <p class="text-gray-600 dark:text-gray-300">
+                                    teamfootballben10@gmail.com
+                                </p>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
+
+                <!-- Contact Form -->
+                <div class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg">
+                    <h3 class="text-2xl font-semibold text-gray-800 dark:text-white mb-6">
+                        Send Message
+                    </h3>
+
+                    <form class="space-y-5">
+
+                        <input type="text" placeholder="Your Name"
+                            class="w-full p-4 rounded-xl border border-gray-300 dark:border-gray-700 dark:bg-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-green-500">
+
+                        <input type="email" placeholder="Your Email"
+                            class="w-full p-4 rounded-xl border border-gray-300 dark:border-gray-700 dark:bg-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-green-500">
+
+                        <textarea rows="5" placeholder="Your Message"
+                            class="w-full p-4 rounded-xl border border-gray-300 dark:border-gray-700 dark:bg-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-green-500"></textarea>
+
+                        <button type="submit"
+                            class="w-full bg-green-600 hover:bg-green-700 text-white py-4 rounded-xl font-semibold transition duration-300">
+                            Send Message
+                        </button>
+
+                    </form>
+                </div>
+
             </div>
         </div>
     </section>
